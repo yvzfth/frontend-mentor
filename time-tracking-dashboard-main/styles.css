@@ -1,0 +1,69 @@
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+
+.user {
+    width: 300px;
+    background-color: hsl(235, 46%, 20%)
+}
+
+.user-info {
+    background-color: hsl(246, 80%, 60%)
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+    width: 200px;
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%)
+}
+
+.play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%)
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%)
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%)
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%)
+}
+
+.work-des,
+.play-des,
+.study-des,
+.exercise-des,
+.social-des,
+.self-care-des {
+    background-color: hsl(235, 46%, 20%);
+    width: inherit;
+}
+
+.activities {
+    display: flex;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

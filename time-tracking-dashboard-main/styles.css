@@ -1,69 +1,169 @@
-body {
-    background-color: hsl(226, 43%, 10%);
-}
-
-.user {
-    width: 300px;
-    background-color: hsl(235, 46%, 20%)
-}
-
-.user-info {
-    background-color: hsl(246, 80%, 60%)
-}
-
-.work,
-.play,
-.study,
-.exercise,
-.social,
-.self-care {
-    width: 200px;
-}
-
-.work {
-    background-color: hsl(15, 100%, 70%)
-}
-
-.play {
-    background-color: hsl(195, 74%, 62%);
-}
-
-.study {
-    background-color: hsl(348, 100%, 68%)
-}
-
-.exercise {
-    background-color: hsl(145, 58%, 55%)
-}
-
-.social {
-    background-color: hsl(264, 64%, 52%)
-}
-
-.self-care {
-    background-color: hsl(43, 84%, 65%)
-}
-
-.work-des,
-.play-des,
-.study-des,
-.exercise-des,
-.social-des,
-.self-care-des {
-    background-color: hsl(235, 46%, 20%);
-    width: inherit;
-}
-
-.activities {
-    display: flex;
-    align-items: center;
-}
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+    body {
+        background-color: hsl(226, 43%, 10%);
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        padding: 5%;
+    }
+    
+    .dashboard-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .user {
+        width: 300px;
+        background-color: hsl(235, 46%, 20%);
+        border-radius: 20px;
+    }
+    
+    .user-info {
+        background-color: hsl(246, 80%, 60%);
+        padding: 30px;
+        border-radius: 20px;
+    }
+    
+    .user-info p {
+        color: #8CC1FF
+    }
+    
+    h1 {
+        font-weight: 300;
+        margin-top: 0;
+        padding-bottom: 30px;
+        color: #ffffff;
+    }
+    
+    .user-info img {
+        width: 40%;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+    }
+    
+    .user-img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .user-info p {
+        margin-bottom: 0;
+    }
+    
+    .time-interval {
+        padding: 10%;
+        color: #5A60A6;
+        user-select: none;
+    }
+    
+    #daily:hover,
+    #weekly:hover,
+    #monthly:hover {
+        color: #ffffff;
+    }
+    
+    #daily:active,
+    #weekly:active,
+    #monthly:active {
+        color: #E8EED1
+    }
+    
+    .activities-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        max-width: 80%;
+    }
+    
+    .work,
+    .play,
+    .study,
+    .exercise,
+    .social,
+    .self-care {
+        width: 250px;
+        display: inline-block;
+        margin: 20px;
+        text-align: right;
+        background-repeat: no-repeat;
+        background-position-x: right 5%;
+        padding-top: 5%;
+        border-radius: 18px;
+    }
+    
+    .work {
+        background-color: hsl(15, 100%, 70%);
+        background-image: url("./images/icon-work.svg");
+    }
+    
+    .play {
+        background-color: hsl(195, 74%, 62%);
+        background-image: url("./images/icon-play.svg");
+    }
+    
+    .study {
+        background-color: hsl(348, 100%, 68%);
+        background-image: url("./images/icon-study.svg");
+    }
+    
+    .exercise {
+        background-color: hsl(145, 58%, 55%);
+        background-image: url("./images/icon-exercise.svg");
+    }
+    
+    .social {
+        background-color: hsl(264, 64%, 52%);
+        background-image: url("./images/icon-social.svg");
+    }
+    
+    .self-care {
+        background-color: hsl(43, 84%, 65%);
+        background-image: url("./images/icon-self-care.svg");
+    }
+    
+    .work-des,
+    .play-des,
+    .study-des,
+    .exercise-des,
+    .social-des,
+    .self-care-des {
+        background-color: hsl(235, 46%, 20%);
+        width: inherit;
+        max-width: inherit;
+        text-align: left;
+        border-radius: 15px;
+    }
+    
+    .head {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        color: #ffffff;
+    }
+    
+    .current-time {
+        font-size: 48px;
+        color: #ffffff;
+        font-weight: 300;
+        padding: 20px;
+    }
+    
+    .previous-time {
+        color: #7F85C7;
+        padding: 20px;
+        padding-top: 0px;
+    }
+    
+    .space-wrapper {
+        padding: 10px;
+    }
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
